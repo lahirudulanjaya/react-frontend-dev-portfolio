@@ -30,7 +30,8 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            {console.log(elem)}
+            return <div key={i} data-src={require(""+elem.toString())} />;
           });
         }
       }

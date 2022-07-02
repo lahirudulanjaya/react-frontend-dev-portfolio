@@ -3,7 +3,6 @@ import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
-
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
@@ -27,7 +26,7 @@ class About extends Component {
                 <span style={{ cursor: "auto" }}>
                   <img
                     height="250px"
-                    src={profilepic}
+                    src={require("./profile.jpg")}
                     alt="Avatar placeholder"
                   />
                   <Icon
@@ -72,7 +71,7 @@ class About extends Component {
                     className="card-body font-trebuchet text-justify ml-3 mr-3"
                     style={{
                       height: "auto",
-                      fontSize: "132%",
+                      fontSize: "150%",
                       lineHeight: "200%",
                     }}
                   >
